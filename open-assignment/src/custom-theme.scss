@@ -1,0 +1,21 @@
+/*
+ * Copyright (C) - All Rights Reserved
+ * Written by Saketh Ravirala
+ * Unauthorized use or copying of this file, via any medium is strictly prohibited and will be subject to legal action.
+ * Proprietary and confidential
+ */
+
+@use '~@angular/material' as mat;
+@include mat.core();
+$open-assignment-primary: mat.define-palette(mat.$indigo-palette);
+$open-assignment-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$open-assignment-warn: mat.define-palette(mat.$red-palette);
+$open-assignment-theme: mat.define-light-theme((
+  color: (
+    primary: $open-assignment-primary,
+    accent: $open-assignment-accent,
+    warn: $open-assignment-warn,
+  )
+));
+@include mat.all-component-themes($open-assignment-theme);
+

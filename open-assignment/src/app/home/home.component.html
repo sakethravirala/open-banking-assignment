@@ -1,0 +1,59 @@
+<!-- /*
+ * Copyright (C) - All Rights Reserved
+ * Written by Saketh Ravirala
+ * Unauthorized use or copying of this file, via any medium is strictly prohibited and will be subject to legal action.
+ * Proprietary and confidential
+ */ -->
+
+<div class="home1">
+    <div class="home-text">We make it Super Simple</div>
+    <img class="collect-img" alt="open-collect-img" src="./../assets/open-assets/collect_img-video.png" />
+
+    <div class="calculator">
+        <div class="calculator-title">Eligibility Calculator</div>
+        <div class="calculator-text">Monthly Income</div>
+        <div class="expense-income-text">{{income| currency:'INR':'symbol':'3.0'}}</div>
+        <mv-slider class="calculator-slider" [(value)]="income" [min]="100000" [max]="300000"></mv-slider>
+        <div class="row expense-income-labels">
+            <div class="min-expense-income">₹ 1,00,000</div>
+            <div class="max-expense-income">₹ 3,00,000</div>
+        </div>
+        <div class="calculator-text">Monthly Expense</div>
+        <div class="expense-income-text">{{expense| currency:'INR':'symbol':'3.0'}}</div>
+        <mv-slider class="calculator-slider slider-expense" [(value)]="expense" [min]="10000" [max]="200000">
+        </mv-slider>
+        <div class="row expense-income-labels">
+            <div class="min-expense-income">₹ 10,000</div>
+            <div class="max-expense-income">₹ 2,00,000</div>
+        </div>
+        <div class="calculator-text">Repayment Tenure</div>
+        <div class="dropdown" (click)="toggle()">
+            <button class="dropbtn">{{tenure}}</button>
+            <span class="caret" [ngClass]="toggleDropdown? 'up' : 'down'"></span>
+            <div class="dropdown-content" *ngIf="toggleDropdown">
+                <a *ngFor="let tenure of tenures" (click)="selectTenure(tenure)">{{tenure}}</a>
+            </div>
+        </div>
+        <div class="calculator-text">
+            Do you have any existing loans?
+            <span class="existing-loan-toggle">
+                <mat-slide-toggle (change)="onToggle($event)" [disableRipple]="true"></mat-slide-toggle>
+            </span>
+        </div>
+
+        <div *ngIf="existingLoan" class="calculator-text">
+            EMI of existing loan (optional)
+            <div>
+                <input class="existing-loan" currencyMask [(ngModel)]="existingLoanValue" [options]="{ prefix: '₹ ', thousands: ',', align: 'left'
+            , precision:'0', allowNegative:'false'}" />
+            </div>
+        </div>
+    </div>
+    <div class="calculator-summary">
+        <div class="summary-text">Loan Amount<div class="summary-value">₹ 1,00,000</div>
+        </div>
+        <div class="summary-text">Your EMI will be<div class="summary-value">₹ 15,000</div>
+        </div>
+        <div class="get-money-button">GET MONEY</div>
+    </div>
+</div>

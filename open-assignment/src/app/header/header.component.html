@@ -1,0 +1,17 @@
+<!-- /*
+ * Copyright (C) - All Rights Reserved
+ * Written by Saketh Ravirala
+ * Unauthorized use or copying of this file, via any medium is strictly prohibited and will be subject to legal action.
+ * Proprietary and confidential
+ */ -->
+
+<div class="toolbar" [ngClass]="mini? 'toolbar-mini' : 'toolbar-max'" role="banner" (scroll)="onScrollEvent($event)">
+    <img [ngClass]="mini? 'logo-mini' : 'logo-max'" alt="open-logo" src="./../assets/open-assets/logo@2x.png" />
+    <div [ngClass]="mini? 'header-text-mini' : 'header-text-max'">
+        <div class="products-text">Products</div>
+        <div class="solutions-text">Solutions</div>
+        <div class="pricing-text">Pricing</div>
+        <div class="login-button">Login</div>
+        <div class="get-started-button">Get Started</div>
+    </div>
+</div>

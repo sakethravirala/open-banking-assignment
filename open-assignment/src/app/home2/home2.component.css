@@ -1,0 +1,161 @@
+/*
+ * Copyright (C) - All Rights Reserved
+ * Written by Saketh Ravirala
+ * Unauthorized use or copying of this file, via any medium is strictly prohibited and will be subject to legal action.
+ * Proprietary and confidential
+ */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+.cards{
+    position: absolute;
+    top: 1137px;
+    left: 191px;
+}
+
+.card{
+  background-color: white;
+  border-radius: 20px;
+  border: solid 1px #FFFFFF;
+  box-shadow: 0px 0px 30px #2321321F;
+  cursor: default;
+  width: 390px;
+  height: 253px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  transition: padding-bottom 0.15s ease-out, padding-top 0.15s ease-out;
+}
+
+.card:hover{
+  opacity: 0.85;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: padding-bottom 0.15s ease-out, padding-top 0.15s ease-out;
+  background-color: #9F62C9;
+}
+
+#card:hover .card-title{
+  color: #FFFFFF !important;
+}
+
+#card:hover .card-text{
+  color: #FFFFFF !important;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+
+#card:hover .card-image{
+  color: #FFFFFF !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-right: 2px;
+}
+
+.card-image{
+  height: 90px;
+  padding: 34px 267px 20px 34px;
+}
+
+.card-title{
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+text-align: left;
+color: #333333;
+font-weight: bolder;
+padding-left: 34px;
+}
+
+.card-text{
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+color: #999999;
+padding: 11px 34px 42px 34px;
+}
+
+.card2{
+  margin-top: 60px;
+}
+
+.card3{
+  margin-top: 60px;
+}
+
+.card4{
+  margin-left: 48px;
+  position: absolute;
+  top: 120px;
+  left: 400px;
+}
+
+.card5{
+  position: absolute;
+  top: 380px;
+  left: 400px;
+  margin-left: 48px;
+  margin-top: 60px;
+}
+
+.home-text-2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    text-align: left;
+    position: absolute;
+    top: 1377px;
+    left: 1158px;
+    color: #222222;
+    width: 490px;
+    padding-bottom: 55px;
+}
+  
+.home-text-2:after {
+    width: 24%;
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#707070;
+    height:8px;
+    border-radius:13px;
+    color: #000000;
+}
+  
+.home-text-3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    position: absolute;
+    top: 1561px;
+    left: 1158px;
+    color: #777777;
+    width: 390px;
+    padding-bottom: 55px;
+}
+  
+.open-account-button{
+    position: absolute;
+    left: 1158px;
+    top: 1686px;
+    width: 279px;
+    height: 40px;
+    padding-top: 19px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #663399;
+    text-align: center;
+    border: solid 2.5px #663399;
+    border-radius: 24px;
+    cursor: pointer;
+}
+  
+.open-account-button:hover{
+    background: linear-gradient(to right,#a062c9ee ,#663399 );
+    color: #FFFFFF;
+    border: solid 2.5px linear-gradient(to right,#a062c9ee ,#663399 );
+}

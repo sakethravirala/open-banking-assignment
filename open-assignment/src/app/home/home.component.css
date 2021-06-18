@@ -1,0 +1,306 @@
+/*
+ * Copyright (C) - All Rights Reserved
+ * Written by Saketh Ravirala
+ * Unauthorized use or copying of this file, via any medium is strictly prohibited and will be subject to legal action.
+ * Proprietary and confidential
+ */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+.collect-img{
+  position: absolute;
+  top: 466px;
+  left: 136px;
+}
+
+.home-text{
+  font-family: 'Montserrat';
+  font-size: 40px;
+  text-align: left;
+  position: absolute;
+  top: 270px;
+  left: 189px;
+  color: #222222;
+  width: 400px;
+  padding-bottom: 15px;
+}
+
+.home-text:after {
+  width: 59%;
+  content:'';
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  background:black;
+  height:8px;
+  border-radius:13px;
+  color: #000000;
+}
+
+.calculator{
+  position: absolute;
+  top: 270px;
+  left: 1100px;
+  height: fit-content;
+  width: 490px;
+  border-radius: 24px;
+  background-color: white;
+  box-shadow: 0px 0px 30px #2321321F;
+  cursor: default;
+  padding-bottom: 40px;
+  transition: height 0.45s ease-out
+}
+
+.calculator-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #222222;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  background-color: #FAFBFD;
+}
+
+.calculator-text{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  text-align: left;
+  color: #222222;
+  padding: 35px 30px 10px 50px;
+}
+
+.calculator-slider{
+  padding-left: 50px;
+}
+
+.existing-loan-toggle{
+  position: absolute;
+  right: 30px;
+  padding-right: 35px;
+  margin-top: -2px;
+}
+
+.expense-income-text{
+  padding-left: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: left;
+  color: #222222;
+  padding-bottom: 8px;
+}
+
+.expense-income-text::first-letter {
+  padding-right: 0.3em;
+}
+
+.expense-income-labels{
+  padding-left: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  text-align: left;
+  color: #777777;
+  padding-bottom: 8px;
+  padding-right: 60px;
+}
+
+.min-expense-income{
+  text-align: left;
+}
+
+.max-expense-income{
+  text-align: right;
+  margin-top: -12px;
+}
+
+::ng-deep .slider.slider-horizontal {
+  width: 77%;
+}
+
+::ng-deep .slider .tooltip-inner {
+    display: none;
+}
+
+::ng-deep .slider-selection{
+    background-color: #663399;
+    background-image: none;
+}
+
+::ng-deep .slider.slider-horizontal .slider-track{
+    height: 5px;
+}
+
+::ng-deep .slider-handle{
+  background-color: #663399;
+  background-image: none;
+  top: -2px;
+  width: 9px !important;
+  height: 9px !important;
+  border: 4px solid white;
+}
+
+::ng-deep .slider-expense .slider-handle{
+  width: 9px !important;
+}
+
+::ng-deep .mat-slide-toggle-bar{
+  width: 30px !important;
+  height: 15px !important;
+}
+
+::ng-deep .mat-slide-toggle-thumb{
+  height: 10px !important;
+  width: 10px !important;
+  border-radius: 46% !important;
+  margin-top: 4.30px !important;
+  border: 1px solid white;
+}
+
+::ng-deep .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb{
+  background-color: white;
+  border: 1px solid #663399;
+}
+
+::ng-deep .mat-slide-toggle.mat-checked .mat-slide-toggle-bar{
+  background-color: #663399;
+}
+
+.existing-loan{
+  height: 100%;
+  padding-top: 15px;
+  width: 90%;
+  border: none;
+  border-bottom: 0.5px solid #00000033;
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  color: #222222;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.existing-loan:focus-visible{
+  outline:none
+}
+
+.calculator-summary{
+  position: absolute;
+  top: 390px;
+  left: 1595px;
+  background-color: #663399;
+  height: 363px;
+  width: 240px;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  padding-top: 40px;
+  cursor: default;
+}
+
+.summary-text{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  color: white;
+  padding: 35px 0px 10px 0px;
+  text-align: center;
+}
+
+.summary-value{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 21px;
+  font-weight: bolder;
+  margin-top: 5px;
+}
+
+.get-money-button{
+  width: 140px;
+  height: 25px;
+  padding-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: #663399;
+  text-align: center;
+  border: solid 2.5px #663399;
+  border-radius: 24px;
+  cursor: pointer;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.get-money-button:hover{
+  font-weight: bolder;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0px;
+  font-size: 20px;
+  border-bottom: 0.5px solid #00000033;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-bottom: 0.5px solid #00000033;
+  margin-left: 50px;
+  padding-bottom: 5px;
+  width: 77%;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1000;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: linear-gradient(to right,#a062c9ee ,#663399 );
+  color: #FFFFFF;
+  border: solid 2.5px linear-gradient(to right,#a062c9ee ,#663399 );
+}
+
+.caret {
+  top: 0px;
+  width: 0;
+  height: 0px;
+  border: 7px solid transparent;
+  margin-top: 10px;
+  float: right;
+}
+
+.caret.down{
+  border-top-color: #707070;
+}
+
+.caret.up{
+  border-bottom-color: #707070;
+  margin-top: 0px;
+}
